@@ -1,23 +1,36 @@
+
 import java.util.Scanner;
-import java.util.Arrays; // Import necessário para Arrays.toString()
+import java.util.Arrays; 
 
-class Vetores {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+class Vetores{
 
-        int[] vetorA = new int[5];
-        int[] vetorB = new int[vetorA.length];
+        public static void main(String[] args){
 
-        for (int i = 0; i < vetorA.length; i++) {
-            System.out.print("Entre com o valor da posição " + i + ": ");
-            vetorA[i] = scan.nextInt();
-            vetorB[i] = vetorA[i]; // Copia os valores para vetorB
+            Scanner scan = new Scanner(System.in);
+
+            int[] vetorA = new int[5];
+            int[] vetorB = new int[vetorA.length];
+
+            for(int i=0; i < vetorA.length; i++){
+                System.out.println("entre com o valor da posicao: " + i);
+                vetorA[i] = scan.nextInt();
+                vetorB[i] = vetorA[i];
+            }
+
+             System.out.println("entre com o valor do vetorA: ");
+             
+            for(int i=0; i < vetorA.length; i++){
+                System.out.println(vetorA[i] + " ");
+            }
+            System.out.println();
+
+            System.out.println("entre com o valor do vetorB: ");
+            for(int i=0; i < vetorB.length; i++){
+                System.out.println(vetorB[i] + " ");
+            }
+            System.out.println();
+
         }
 
-        // Correção: Exibe os vetores corretamente
-        System.out.println("\nValores do vetorA: " + Arrays.toString(vetorA));
-        System.out.println("Valores do vetorB: " + Arrays.toString(vetorB));
 
-        scan.close(); // Fecha o Scanner
-    }
 }
