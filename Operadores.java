@@ -32,6 +32,16 @@ class Operadores{
         System.out.println(a++);
         System.out.println(++a);
 
+      // condicionais 
+         System.out.println("-------------------");
+         System.out.println("  CONDICIONAIS  ");
+         System.out.println("-------------------");
+
+      if ( a >= b ){
+         System.out.println("A é maior que B");
+      } else {
+         System.out.println("A não é maior que B");
+      }
      }
 
 }
