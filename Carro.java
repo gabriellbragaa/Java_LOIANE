@@ -14,6 +14,21 @@ public class Carro{
     double maxCombustivel;
     double consumoCombustivel;
     
+    // construtor -- usado para inicializar 
+    
+    /* public Carro(String cor, String modelo, int numPassageiro,double maxCombustivel,
+    double consumoCombustivel){
+        this.cor = cor;
+        this.modelo = modelo;
+        this.numPassageiro = numPassageiro; // this referencia os atributos e metos da classe
+        this.maxCombustivel = maxCombustivel;
+        this.consumoCombustivel = consumoCombustivel;
+    
+    
+    }
+    */
+
+
     // metodo
     void ExibirAutonomia(){
         System.out.println("A autonomia do carro e: " + consumoCombustivel * maxCombustivel );
