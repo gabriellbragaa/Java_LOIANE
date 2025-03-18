@@ -50,7 +50,6 @@ public class Carro{
     }
     
     
-    
     public static void main(String[] args){
         Carro van = new Carro();
         van.cor = "fiat";
@@ -70,11 +69,8 @@ public class Carro{
         double qtdCombustivel = van.calCombustivel(10);
         System.out.println(String.format("Quantidade de combustível: %.2f", qtdCombustivel));
 
-
-        
     }
 
 
-
-
+   
 }
