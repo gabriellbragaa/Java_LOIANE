@@ -8,6 +8,17 @@ public class Professor extends Pessoa{
     private String nomeCurso;
     private double salario;
 
+
+    public Professor(){
+        super();
+    }
+
+    public Professor(String nome, String endereco, String cpf, double salario) {
+        super(nome, endereco, cpf); // Chama o construtor correto da superclasse
+        this.salario = salario;
+    }
+
+
     public String getDepartamento() {
         return this.departamento;
     }
@@ -36,6 +47,13 @@ public class Professor extends Pessoa{
         return salario;
     }
 
-    
+    public String obterEtiquetaEndereço(){
+        
+        String s = "endereço professor: ";
+        s += super.getEndereco();
+        
+        
+        return s;
+    }
 
 }

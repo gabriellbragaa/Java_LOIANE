@@ -11,7 +11,14 @@ public class Teste{
         Pessoa pessoa = new Pessoa();
 
         aluno.setNome("gabriel");
+        pessoa.setEndereco("rua JOAO PESSOA");
+        professor.setEndereco("rua almegadas");
+        aluno.setEndereco("rua joao almeida");
 
+        
+        System.out.println(pessoa.obterEtiquetaEndereço());
+        System.out.println(professor.obterEtiquetaEndereço());
+        System.out.println(aluno.obterEtiquetaEndereço());
     }
 }
 

@@ -8,6 +8,14 @@ public class Aluno extends Pessoa{
     private String curso;
     private double[] notas;
 
+    public Aluno(){
+        super();
+    }
+
+    public Aluno(String nome, String endereco, String cpf){
+        super(nome, endereco, cpf);
+        this.curso = curso;
+    }
 
     public String getCurso() {
         return this.curso;
@@ -25,13 +33,27 @@ public class Aluno extends Pessoa{
         this.notas = notas;
     }
 
-    public double calcularMedia(){
-        return 0;
+    public double calcularMedia() {
+        int soma = 0;
+        
+        for (double nota : notas) { // Percorre o array somando as notas
+            soma += nota;
+        }
+        return (double) soma / notas.length; 
     }
 
-    public double alunoAprovado(){
-        return 0;
+    public boolean alunoAprovado() {
+        return calcularMedia() >= 7; 
     }
 
+
+    public String obterEtiquetaEndereço(){
+        
+        String s = "endereço aluno: ";
+        s += super.getEndereco();
+        
+        
+        return s;
+    }
 
 }
