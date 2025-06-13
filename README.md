@@ -1,1 +1,1 @@
-Este repositório aborda raizes introdutórias ao JAVA, como a disponibilidade da linguagem para projetos interligados em Programação Orientada a Objetos, como também mostra o tratamento de exceções no JAVA. Além disso tudo, também tem projetos que envolve a matrizes e vetores.
+Este repositório aborda raizes introdutórias ao JAVA. Envolve a disponibilidade da linguagem para projetos interligados em Programação Orientada a Objetos, como também mostra o tratamento de exceções no JAVA. Além de envolve projetos que utilizam de matrizes e vetores. 
